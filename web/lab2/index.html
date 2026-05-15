@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OurShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+</body>
+</html>
+
+<header class="header">
+    <div class="logo">OurShop</div>
+
+    <nav class="nav" id="navMenu">
+        <a href="#">Home</a>
+        <a href="#">Catalog</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="icons">
+        <span>🔍</span>
+        <span>🛒</span>
+    </div>
+
+    <div class="burger" id="burger">
+        ☰
+    </div>
+</header>
+
+<main>
+    <section class="banner">
+        <div class="banner-text">
+            <h1>New Products 2026</h1>
+            <p>Now you can buy some products</p>
+            <button>Shop</button>
+        </div>
+    </section>
+
+    <section class="products">
+
+        <div class="product-card">
+            <img src="https://placehold.co/250x250" alt="">
+            <h3>Product 1</h3>
+            <p>$30</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://placehold.co/250x250" alt="">
+            <h3>Product 2</h3>
+            <p>$40</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://placehold.co/250x250" alt="">
+            <h3>Product 3</h3>
+            <p>$50</p>
+            <button>Add to cart</button>
+        </div>
+
+    </section>
+</main>
+
+<footer class="footer">
+    <div>2026 OurShop</div>
+    <div>Privacy Policy</div>
+    <div>Instagram</div>
+</footer>
+
+<script>
+    const burger = document.getElementById("burger");
+    const nav = document.getElementById("navMenu");
+
+    burger.addEventListener("click", function() {
+        nav.classList.toggle("active");
+    });
+</script>
